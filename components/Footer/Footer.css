@@ -1,0 +1,16 @@
+footer {
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    height: 40px;
+  }
+}
