@@ -5,6 +5,11 @@
   align-items: center;
   padding: 20px;
 }
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 .projects > ul {
   display: grid;
@@ -42,11 +47,15 @@
 }
 
 .projects a:hover {
-  background-color: darken(var(--heading), 10%);
+  background-color: #40baee;
 }
 @media screen and (max-width: 768px) {
   .projects {
     padding: 15px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
   }
 
   .projects > ul {
@@ -69,6 +78,10 @@
 @media screen and (max-width: 425px) {
   .projects {
     padding: 10px;
+  }
+
+  .projects h2 {
+    font-size: 24px;
   }
 
   .projects > ul {

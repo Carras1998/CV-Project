@@ -16,7 +16,9 @@ const plantilla = () => {
     <main>
       ${AboutMe()}
       <div class="change-container">
-        <button id="change">Mostrar ${mostrar}</button>
+        <button id="change">Mostrar ${
+          mostrar === 'experiencia' ? 'educación' : 'experiencia'
+        }</button>
       </div>
       <div id="content">
         ${contenidoPrincipal[mostrar]}
@@ -35,7 +37,10 @@ export const addMainListeners = () => {
 
   boton.addEventListener('click', () => {
     mostrar = mostrar === 'experiencia' ? 'educacion' : 'experiencia'
-    boton.textContent = `Mostrar ${mostrar}`
+    boton.textContent = `Mostrar ${
+      mostrar === 'experiencia' ? 'educacion' : 'experiencia'
+    }`
     document.querySelector('#content').innerHTML = contenidoPrincipal[mostrar]
+    document.getElementById(mostrar).scrollIntoView({ behavior: 'smooth' })
   })
 }
