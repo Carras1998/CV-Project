@@ -39,7 +39,7 @@
 
 .projects a {
   padding: 8px 16px;
-  background-color: var(--heading);
+  background-color: var(--body);
   color: var(--background);
   text-decoration: none;
   border-radius: 4px;
